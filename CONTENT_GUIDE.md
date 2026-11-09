@@ -21,9 +21,9 @@ Os marcadores exibem o nome esperado do arquivo. Para cada case, substitua `Medi
 ## Identidade
 
 - A família é Inter (substituta livre das grotescas das referências: BaseGrotesk e Aeonik). Para produção, prefira hospedar os arquivos `.woff2` localmente em `public/fonts/` e substituir o `@import` do Google Fonts em `app/globals.css` por regras `@font-face`.
-- Paleta: preto `#000`, branco `#fff`, cinza `#ababab`/`#666`; vermelho `#ee3a49` só para logo, menu e rótulos; verde `#0fa64b` só no selo giratório; azul `#007bff` só em contornos e hover. Botões são sempre pílula com contorno, nunca preenchidos. Seções alternam preto e branco, sem gradientes nem sombras.
+- Paleta: preto `#000`, branco `#fff`, cinza `#ababab`/`#666`; sem vermelho: logo, menu e rótulos herdam preto ou branco conforme o fundo; verde `#0fa64b` só no selo giratório; azul `#007bff` só em contornos e hover. Botões são sempre pílula com contorno, nunca preenchidos. Seções alternam preto e branco, sem gradientes nem sombras.
 - Cases do portfólio ficam em `app/data/works.ts`; um slug que não esteja lá retorna 404.
-- Cores e espaçamentos globais ficam no início de `app/globals.css` (variáveis `--red`, `--green`, `--blue`, `--fog`, `--pill`).
+- Cores e espaçamentos globais ficam no início de `app/globals.css` (variáveis `--green`, `--blue`, `--fog`, `--pill`).
 - O pattern recebido está em `public/media/comc-pattern.jpg`.
 - A aplicação escura está em `public/media/comc-dark-mark.png`.
 

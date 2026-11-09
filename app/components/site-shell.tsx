@@ -25,13 +25,13 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     <header className="site-header">
       <Link className="wordmark" href="/" aria-label="COM C — página inicial">COM<span>\</span>C</Link>
       <button className="menu-trigger" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="main-menu"><span>{open ? "Fechar" : "Menu"}</span><b aria-hidden="true">\</b></button>
+    </header>
       <nav id="main-menu" className={open ? "nav-panel is-open" : "nav-panel"} aria-label="Navegação principal">
         <div className="nav-index">COM\C <span>©2026</span></div>
         <div className="nav-list">{navigation.map(([label, href], index) => <Link key={href} href={href} className={pathname === href ? "active" : ""}><small>{String(index + 1).padStart(2, "0")}</small><span>{label}</span><i aria-hidden="true">↗</i></Link>)}</div>
         <div className="nav-locations">Manaus <b>\</b> Campinas</div>
       </nav>
-    </header>
     <div className="page-enter" key={pathname}>{children}</div>
-    <Link href="/contato" className="kinetic-mark" aria-label="Fale com a COM C"><svg className="kinetic-ring" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="ring-path" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#ring-path">Conceito · Comunicação · Criatividade ·</textPath></text></svg><span className="kinetic-c">\C</span></Link>
+    <Link href="/contato" className="kinetic-mark" aria-label="Fale com a COM C"><svg className="kinetic-ring" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="ring-path" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#ring-path" textLength="236" lengthAdjust="spacing">Conceito · Comunicação · Criatividade ·</textPath></text></svg><span className="kinetic-c">\C</span></Link>
   </>;
 }
