@@ -1,0 +1,5 @@
+import { Footer, PageHero } from "../components/shared";
+export const metadata = { title: "Contato" };
+export default function Contato(){return <main><PageHero index="06" title="Duas cidades. Uma só COM\C." lead="Estratégia, criação e entrega conectando Norte e Sudeste." dark />
+  <section className="contact-cities"><article><small>01 \ AMAZONAS</small><h2>Manaus</h2><address>Rua Dep. Evaldo Flores, 02<br/>Dom Pedro<br/>Manaus — AM</address><a href="https://wa.me/5592984171999">WhatsApp<br/><b>(92) 98417-1999</b> ↗</a></article><div className="contact-slash" aria-hidden="true">\</div><article><small>02 \ SÃO PAULO</small><h2>Campinas</h2><address>Av. Orosimbo Maia, 430 — Sala 1209<br/>Vila Itapura<br/>Campinas — SP</address><a href="https://wa.me/5519994204180">WhatsApp<br/><b>(19) 99420-4180</b> ↗</a></article></section>
+  <section className="contact-social"><p>Novos projetos, parcerias e ideias.</p><h2>Vamos começar<br/>uma conversa?</h2><a href="mailto:contato@comc.ag">contato@comc.ag ↗</a><small>E-mail provisório — atualizar no arquivo de conteúdo.</small></section><Footer /></main>}

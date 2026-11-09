@@ -1,0 +1,7 @@
+import { Footer, PageHero } from "../components/shared";
+export const metadata = { title: "Quem somos" };
+export default function QuemSomos() { return <main><PageHero index="01" title="O ponto onde conceito encontra estratégia." lead="Marcas ganham vida quando inteligência, estética e propósito trabalham na mesma direção." />
+  <section className="editorial-copy"><div className="copy-lead">A COM\C é o ponto onde conceito encontra conversa, criatividade encontra estratégia e marcas ganham vida com verdade.</div><div className="copy-body"><p>Somos uma agência full service que une inteligência, estética e propósito pra criar experiências que conectam, engajam e deixam marca.</p><p>A gente acredita em ideias bem pensadas, bem-feitas e que fazem sentido — pra quem vê e pra quem vive a marca.</p></div></section>
+  <section className="dark-statement"><p>Nosso time é feito de gente curiosa, criativa e comprometida.</p><h2>A gente mergulha,<br/>entende, propõe<br/>e constrói junto.</h2></section>
+  <section className="editorial-copy reverse"><div className="copy-lead">Comunicação, pra nós, é relação — e relação boa gera movimento.</div><div className="copy-body"><p>Se você busca quem entenda sua essência e transforme isso em ações relevantes e cheias de significado, chegou no lugar certo.</p></div></section>
+  <section className="signature-block"><div>COM\C</div><p>Conceito, Comunicação e Criatividade.<br/>Na ordem certa. No tempo certo. Com verdade.</p></section><Footer /></main> }
